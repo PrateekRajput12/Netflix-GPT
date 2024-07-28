@@ -83,7 +83,7 @@ else{
   .catch((error) => {
     const errorCode = error.code;
     const errorMessage = error.message;
-    console.log(errorCode+"  "+errorMessage);
+    seterrorMsg(errorCode);
   });
 }
 
@@ -130,7 +130,7 @@ else{
             className='p-3 m-4 w-full  bg-[#111212]  '
              />
 
-             <p className='py-2 my-4 text-red-700 text-lg font-bold  ' >{errorMsg}</p>
+             <p className='py-2  text-red-700 text-lg font-bold  self-start ' >{errorMsg}</p>
 
           <button 
           type="submit"
